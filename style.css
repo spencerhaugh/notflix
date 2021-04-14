@@ -35,6 +35,10 @@ header h1 {
     color: #fff;
 }
 
+header form {
+    margin: 0 5% 0 0;
+}
+
 /* Search */
 
 .search {
@@ -79,9 +83,6 @@ main {
 
 .movie-info {
     color: #eee;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: .5rem 1rem 1rem;
     letter-spacing: .5px;
 }
@@ -135,6 +136,9 @@ main {
         flex-direction: column;
     }
     header h1 {
-        margin-bottom: .5rem;
+        margin: 0 0 .5rem 0;
+    }
+    header form {
+        margin: 0 auto;
     }
 }
