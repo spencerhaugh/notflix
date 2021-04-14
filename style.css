@@ -24,6 +24,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--secondary-color);
+    width: 100vw;
 }
 
 header h1 {
@@ -42,7 +43,7 @@ header h1 {
     border-radius: 50px;
     font-family: inherit;
     font-size: 1rem;
-    padding: 0.5rem 1rem;
+    padding: .5rem 1rem;
     color: #fff;
 }
 
@@ -81,8 +82,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 1rem 1rem;
-    letter-spacing: 0.5px;
+    padding: .5rem 1rem 1rem;
+    letter-spacing: .5px;
 }
 .movie-info h3 {
     margin-top: 0;
@@ -90,7 +91,7 @@ main {
 
 .movie-info span {
     background-color: var(--primary-color);
-    padding: 0.25rem 0.5rem;
+    padding: .25rem .5rem;
     border-radius: 3px;
     font-weight: bold;
 }
@@ -109,7 +110,7 @@ main {
 .overview {
     background-color: #333;
     color: #fff;
-    opacity: 0.9;
+    opacity: .9;
     padding: 2rem;
     position: absolute;
     left: 0;
@@ -117,7 +118,7 @@ main {
     bottom: 0;
     max-height: 100%;
     transform: translateY(101%);
-    transition: transform 0.5s ease-in-out;
+    transition: transform .5s ease-in-out;
 }
 .overview h3 {
     font-weight: bold;
@@ -125,4 +126,15 @@ main {
 }
 .movie:hover .overview {
     transform: translateY(0);
+}
+
+/* Responsiveness */
+
+@media (max-width: 460px) {
+    header {
+        flex-direction: column;
+    }
+    header h1 {
+        margin-bottom: .5rem;
+    }
 }
